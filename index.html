@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="reset.css"> 
+    <link rel = "stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class = body__Container>
+    <div class = "fix__Wrapper">
+        <div id = "toggle__Btn" onclick="aclick();"></div>
+        <div class = "fix__Button__Wrapper">
+            <ul class="toggle" id= "js-ul">
+                <li id="TEST" onclick="page('home');">HOME</li>
+                <li id="About" onclick="page('about');">About</li>
+                <li id="Skills" onclick="page('skills');"> Skills</li>
+                <li id="Project" onclick="page('project');">Project</li>
+                <li id="HoContactme" onclick="page('contact');">Contact</li>
+            </ul>
+        </div>
+
+        
+    </div>
+
+ 
+    <!--TOP Section-->
+    <div class = "first__Section" id="home">
+        <div class = "background__Img">
+            <div class = "typing__Wrapper">
+                <h1>Developer 김영섭의 포트폴리오 입니다.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About Me-->
+    <div class = "second__Section" id="about">
+        <div class = "left__Content">
+                <p>About<br>Me</p>
+        </div>
+
+        <div class = "right__Content">
+                <h1>잘하는 개발자</h1>
+                <p>어릴때 부터 호기심이 많은 성격에 만들어 보았던 간단한 계산기 프로그램으로 무언가를 만드는 것의 재미를 느끼게 되었고 그때부터 개발자를 꿈꾸게 되었습니다. 그래서 대학교도 컴퓨터공학과를 가게 되었고 자연스럽게 많은것을 개발하게 될 수 있었습니다. 그 중 Javascript가 가지고 있는 가능성과 다양성에 매력을 느끼게 되어 웹 어플리케이션 개발자가 되기 위해 많은 노력을 하고 있습니다.
+
+                <p>저는 제 목표를 '잘하는' 개발자로 삼아서 더 공부하고 있습니다. 경력을 쌓은 개발자는 경력만 쌓이면 자연스럽게 되지만 '잘하는'개발자는 경력뿐만 아니라 매일 공부하여 개발자로써 더 높은 곳을 바라보고 있기 때문입니다 . 저는 계속 공부하여 '잘하는'개발자로써 남고 싶습니다.</p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+
+    <div class = "third__Section" id="skills"> 
+        <h1>Skills</h1>
+
+        <div class = "skills__Container">
+            <h1>Launage</h1>
+            <div class = "Skills__Wrapper">
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/C.png" alt="">    
+                </div>
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/JS.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class = "skills__Container">
+            <h1>Web Skils</h1>
+            <div class = "Skills__Wrapper">
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/HTML.png" alt="">
+                </div>
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/CSS.png" alt="">
+                </div>
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/JS.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class = "skills__Container">
+            <h1>FrameWork</h1>
+            <div class = "Skills__Wrapper">
+                <div class = "Skills">
+                 <img src="./IMG/SkillsImg/REACT.png" alt="">
+                </div>
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/NODEJS.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class = "skills__Container">
+            <h1>DataBase</h1>
+            <div class = "Skills__Wrapper">
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/MYSQL.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class = "skills__Container">
+            <h1>Etc</h1>
+            <div class = "Skills__Wrapper">
+                <div class = "Skills">
+                    <img src="./IMG/SkillsImg/GITHUB.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project -->
+    <div class = "fourth__Section" id="project">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <a href="https://zmf1117.github.io/contact">
+                    <img src="./IMG/portfolio.png">
+                </a>
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="http://placehold.it/300x100">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="http://placehold.it/300x100">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+    <div class = "contact" id="contact">
+        <h1>CONTACT!</h1>
+        <p>Email : zmf1118@gmail.com</p>
+        <img src="" alt="">
+    </div>
+
+</div>
+<script src="scroll.js"></script>
+<script src="toggle.js"></script>
+<script src="slides.js"></script>
+</body>
+</html>

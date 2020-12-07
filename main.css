@@ -1,0 +1,374 @@
+/*COMMON*/
+.body {
+  width: 100%;
+  margin: 0 auto;
+}
+.body__Container {
+  width: 100%;
+  font-family: "Gothic A1", sans-serif;
+}
+
+/*First Section*/
+
+.first__Section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.first__Section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  z-index: 1;
+}
+
+.first__Section .background__Img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("./IMG/Image01.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.first__Section .background__Img .typing__Wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4vw;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.fix__Wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 9%;
+  z-index: 10001;
+}
+
+.fix__Wrapper .fix__Button__Wrapper {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.fix__Wrapper .fix__Button__Wrapper ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  color: white;
+  font-size: 12px;
+}
+
+.fix__Wrapper .fix__Button__Wrapper li {
+  cursor: pointer;
+}
+
+/*Second Section COMMON*/
+
+.second__Section {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.left__Content {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.right__Content {
+  display: inline;
+  width: 75%;
+  font-size: 15px;
+}
+
+.right__Content h1 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.right__Content p {
+  padding: 15px 20px 15px 20px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+/*Third Section*/
+
+.third__Section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 20px 50px 20px;
+  box-sizing: border-box;
+  background-color: #e7e6e6;
+}
+
+.third__Section h1 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.third__Section .skills__Container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.third__Section .skills__Container h1 {
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.third__Section .skills__Container .Skills__Wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.third__Section .skills__Container .Skills__Wrapper .Skills {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 30px;
+  margin: 10px 20px 10px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: hidden;
+}
+
+.third__Section .skills__Container .Skills__Wrapper .Skills img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+}
+
+.third__Section .skills__Container .Skills__Wrapper .Skills:hover:before {
+  content: "basic";
+  box-sizing: border-box;
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  font-size: 15px;
+  left: 38px;
+  top: 45px;
+}
+
+.third__Section .skills__Container .Skills__Wrapper .Skills:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.third__Section .skills__Container .Skills__Wrapper .Skills img:hover {
+  opacity: 0.3;
+}
+
+/*Fourth Section*/
+
+.mySlides {
+  display: none;
+}
+
+.mySlides a {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 372.8px;
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Contact*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact h1 {
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+}
+
+.contact p {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .left__Content {
+    width: 100%;
+    font-size: 30px;
+    margin: 10px 0px;
+  }
+
+  .right__Content {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .right__Content h1 {
+    font-size: 25px;
+  }
+
+  .fix__Wrapper .toggle {
+    /*display : none;*/
+  }
+
+  #toggle__Btn {
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 28px;
+    color: white;
+    background-image: url("./IMG/toggle-btn.svg");
+  }
+
+  .fix__Wrapper .fix__Button__Wrapper {
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .fix__Wrapper .fix__Button__Wrapper ul {
+    display: none;
+    flex-direction: column;
+    font-size: 10px;
+    height: auto;
+    border-radius: 15px;
+    color: gray;
+    margin-top: 50px;
+  }
+
+  .fix__Wrapper .fix__Button__Wrapper li {
+    margin: 20px;
+  }
+
+  .second__Section {
+    display: block;
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
