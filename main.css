@@ -110,7 +110,7 @@
 
 .right__Content {
   display: inline;
-  width: 75%;
+  width: 50%;
   font-size: 15px;
 }
 
@@ -211,7 +211,7 @@
 
 .mySlides img {
   width: 100%;
-  height: 372.8px;
+  height: 500px;
   vertical-align: middle;
 }
 
